@@ -16,9 +16,9 @@
   --button-color: rgba(86, 67, 204, 1);
 }
 .main_area {
-  padding: 0 3em;
   border: 5px solid brown;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .cotainer {
@@ -314,6 +314,7 @@ nav .listing {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  padding-bottom: 3em;
 }
 .boxes {
   display: flex;
@@ -409,4 +410,408 @@ h4 {
     font-size: 0.985rem;
     font-weight: 700;
   }
+}
+span {
+  color: var(--main-color);
+  font-style: bold;
+  font-weight: 500;
+}
+.side_side {
+  display: flex;
+  width: 100%;
+  margin-top: 3em;
+  font-size: 2rem;
+  padding-bottom: 5rem;
+}
+.this {
+  font-size: 5rem;
+  font-weight: 700;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-color);
+  margin-bottom: 1em;
+}
+.text4 {
+  text-align: left;
+  width: 40%;
+  padding: 3.3em 0 3.3em 0;
+  line-height: 2em;
+  border: 5px red solid;
+  margin: 6rem 0;
+}
+.imgs {
+  overflow: hidden;
+  max-height: 50rem;
+}
+.img {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  align-items: flex-start;
+  width: calc(40 - 1.3em);
+}
+.background {
+  background: url(https://linear.app/static/gradient/pinkred.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 2em;
+
+  margin-left: 5vw;
+}
+.first {
+  height: 70%;
+  min-width: 70rem;
+  position: relative;
+  margin: 1px 1px;
+  margin-left: 3em;
+  top: 12%;
+  left: 10vw;
+  border-radius: 0.52em;
+  overflow-x: hidden;
+  box-shadow: 0px 40px 80px rgb(0 0 0 / 60%);
+}
+.secondi {
+  height: 78%;
+  min-width: 90rem;
+  position: relative;
+  margin: 1px 1px;
+  margin-left: 1em;
+  top: -32%;
+  left: 8vw;
+  border-radius: 0.52em;
+
+  box-shadow: 0 26px 44px 18px rgb(0 0 0 / 50%);
+}
+.next1 {
+  border: 5px green solid;
+  padding: 5rem 0 5rem 0;
+  background-color: #1c1d1f;
+  width: 100%;
+  height: 100vh;
+  min-height: 50rem;
+  margin-bottom: 3em;
+  padding-bottom: 3em;
+}
+.conti {
+  margin: 0 auto;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.symbols {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+.and {
+  background: -webkit-linear-gradient(#fff, #999);
+  font-style: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.kin {
+  border-radius: 0.3em;
+  border-radius: 0.3em;
+  margin: 0 0.31em;
+  font-size: 2em;
+  width: 2.1em;
+  height: 2.1em;
+  line-height: 2.1em;
+  text-align: center;
+  background: linear-gradient(180deg, #35363a 0%, rgba(39, 40, 43, 0.82) 100%);
+  box-shadow: 0px 13px 1.2em rgb(0 0 0 / 30%), 0px 4px 4px rgb(0 0 0 / 35%);
+  color: #d0d6e0;
+}
+
+.dance {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.3em;
+  font-size: 1.8em;
+  color: var(--text-color);
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.dance > h2 {
+  font-size: 2em;
+  font-style: bold;
+  color: var(--main-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 1em;
+}
+.backg {
+  background: url(https://linear.app/static/gradient/redyellow.png);
+  width: 100vmin;
+  height: 50%;
+  margin: 0.5em 0 0 0;
+  margin-left: 1em;
+  border-radius: 1.52em;
+  background-size: cover;
+  background-position: center center;
+}
+.dis {
+  margin: 5rem auto;
+  max-height: 45vmin;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 8.75em 0;
+  width: 100%;
+}
+.in {
+  font-style: bold;
+  font-size: 2.1em;
+  line-height: 1.5em;
+}
+.image {
+  width: calc(60vw - 1.6em);
+  margin: 0 1.6em 0 0;
+  height: ;
+  border-radius: 0 2.3em 2.3em 0;
+  overflow: hidden;
+  position: relative;
+  max-width: 1100px;
+  overflow: hidden;
+}
+.backk {
+  position: relative;
+  border-radius: 0 2.6em 0 0;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background: url(https://linear.app/static/gradient/pinkred.png);
+  background-size: cover;
+  background-position: center center;
+  align-content: center;
+}
+.net {
+  position: absolute;
+  max-height: 80vh;
+  height: 40em;
+  display: flex;
+  justify-self: center;
+  right: 10%;
+  top: 20%;
+}
+.how_do {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #1c1d1f;
+}
+.ni {
+  position: relative;
+  border-radius: 0 0 0 0;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background: url(https://linear.app/static/gradient/yellowredpurple.png);
+  background-size: cover;
+  background-position: center center;
+  align-content: center;
+}
+.image1 {
+  width: calc(60vw - 1.6em);
+  margin: 0 0 0 1.6em;
+  height: ;
+  border-radius: 2.3em 0 0 2.3em;
+  overflow: hidden;
+  position: relative;
+  max-width: 1100px;
+  overflow: hidden;
+}
+.net1 {
+  position: absolute;
+  max-height: 80vh;
+  height: 40em;
+  display: flex;
+  justify-self: center;
+  left: 10%;
+  top: 20%;
+}
+.dead {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+  margin-top: 6rem;
+  padding: 11rem 0;
+}
+.dead_text {
+  margin: 0 10em 1.6em 0;
+}
+.dead_text > h2 {
+  font-style: bold;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+.dead_text > p {
+  font-size: 2em;
+  color: var(--text-color);
+  line-height: 1.3em;
+}
+.seperator {
+  width: 0.1em;
+  margin: 0 2em;
+}
+.svgs {
+  display: flex;
+  margin-bottom: 1em;
+}
+.bomb {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #1c1d1f;
+  margin-bottom: 2em;
+}
+.shit {
+  display: flex;
+  flex-direction: column;
+  width: calc(50%);
+  padding: 4em 3em 4em 4em;
+}
+.shit1 > h2 {
+  font-style: bolder;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--main-color);
+  line-height: 1.4;
+}
+.shit1 > p {
+  line-height: 1.4;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.64em;
+  margin-top: 0.8em;
+}
+.god1 {
+  position: relative;
+  width: 50%;
+  background-color: #323da2;
+}
+.god2 {
+  position: relative;
+  width: 50%;
+  background-color: #1a80a9;
+}
+.god3 {
+  position: relative;
+  width: 50%;
+  background-color: #2eb67d;
+}
+.hmmh {
+  max-height: 43vh;
+  width: 38vw;
+  position: relative;
+  top: 1.5%;
+  left: 2.5%;
+  bottom: 2.5% %;
+}
+.last_child {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1d1f;
+  padding: 3em;
+  border-radius: 0.8em;
+  margin-top: 0.2em;
+}
+.last1 {
+  display: flex;
+  width: 50%;
+  margin-right: 2em;
+  padding: 2.3em 3em 0 0;
+  padding-left: 3em;
+  border-radius: 120px;
+}
+.last2 {
+  display: flex;
+  width: 50%;
+  padding: 2.3em 3em 0 0;
+  border-radius: 120px;
+}
+.sv {
+  margin: 2em auto;
+}
+.sv1 {
+  padding-left: 1.35em;
+}
+.sv1 > h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--main-color);
+  font-style: bold;
+}
+.sv1 > p {
+  line-height: 1.4;
+  color: var(--text-color);
+  font-size: 1.4em;
+  font-style: bold;
+}
+.tried {
+  padding: 5em 0;
+  background-color: #1c1d1f;
+}
+.tryag {
+  margin: 0 3em;
+  padding: 6rem 0;
+}
+.tweet {
+  display: flex;
+  width: calc(33.33%);
+}
+.conns {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.dia {
+  display: flex;
+  background: linear-gradient(180deg, #2d2e31 0%, #27282b 100%);
+  box-shadow: 0px 11.4128px 35.1163px rgb(0 0 0 / 30%);
+  border-radius: 0.8em;
+  font-size: 1.2em;
+  color: var(--main-color);
+  width: 100%;
+  margin-bottom: 1.3em;
+}
+.reduce {
+  width: 2.3em;
+  height: 2.3em;
+  margin-right: 0.8em;
+}
+.ka {
+  color: #8a8f98;
+}
+.tweets {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(180deg, #2d2e31 0%, #27282b 100%);
+  box-shadow: 0px 11.4128px 35.1163px rgb(0 0 0 / 30%);
+  border-radius: 7px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.inn {
+  display: flex;
+  flex-direction: column;
 }
