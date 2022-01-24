@@ -578,7 +578,6 @@ span {
 .image {
   width: calc(60vw - 1.6em);
   margin: 0 1.6em 0 0;
-  height: ;
   border-radius: 0 2.3em 2.3em 0;
   overflow: hidden;
   position: relative;
@@ -629,7 +628,6 @@ span {
 .image1 {
   width: calc(60vw - 1.6em);
   margin: 0 0 0 1.6em;
-  height: ;
   border-radius: 2.3em 0 0 2.3em;
   overflow: hidden;
   position: relative;
@@ -724,7 +722,7 @@ span {
   position: relative;
   top: 1.5%;
   left: 2.5%;
-  bottom: 2.5% %;
+  bottom: 2.5%;
 }
 .last_child {
   display: flex;
@@ -829,4 +827,47 @@ span {
 .inn {
   display: flex;
   flex-direction: column;
+}
+.almost {
+  display: flex;
+  flex-direction: column;
+  padding: 4.5rem 0 4.5rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.linear {
+  font-size: 1.3em;
+  color: var(--main-color);
+  border-radius: 2em;
+  border: 0.02em solid violet;
+  box-shadow: rgba(236, 20, 233, 0.802);
+  justify-content: center;
+  padding: 1em 2.5em;
+  font-weight: 700;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.vixpat {
+  display: flex;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: #1c1d1f;
+}
+.kingsark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0 8em 0;
+}
+.kingsark button {
+  border-radius: 0.3em;
+  font-size: 1.3em;
+  color: var(--main-color);
+  border: 0.02em solid violet;
+  justify-content: center;
+  padding: 1em 2.5em;
+  font-weight: 700;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
