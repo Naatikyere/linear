@@ -353,64 +353,6 @@ h4 {
   color: #8a8f98;
   width: 100%;
 }
-@media (max-width: 430px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    line-height: 1.2;
-    font-size: 1.1em;
-    background-color: #1c1d1f;
-    color-scheme: dark;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .main_area {
-    margin: 0;
-    padding: 0.589em;
-  }
-  .text > h2 {
-    display: inline-block;
-    font-size: 1rem;
-  }
-  .dark_text {
-    margin-bottom: 1em;
-  }
-  .things {
-    display: flex;
-    flex-wrap: wrap;
-    max-height: 1200px;
-    min-width: 30px;
-    justify-items: stretch;
-  }
-  .jsx-3531796665 {
-    max-width: 9rem;
-    margin: 2.25rem;
-    flex-shrink: 1;
-  }
-  .sign_up a {
-    font-weight: 400;
-    margin-right: 0.327em;
-  }
-  .sign_up button {
-    padding: 1em;
-    float: left;
-    border-radius: 0.55em;
-    background-color: var(--button-color);
-    border: none;
-    cursor: pointer;
-  }
-  nav .sign_up {
-    display: inline-block;
-    margin: 0 0.5em;
-    float: left;
-  }
-  #sign_up {
-    font-size: 0.985rem;
-    font-weight: 700;
-  }
-}
 span {
   color: var(--main-color);
   font-style: bold;
@@ -607,6 +549,17 @@ span {
   right: 10%;
   top: 20%;
 }
+@media {
+  .net {
+    position: absolute;
+    max-height: 80vh;
+    height: 40em;
+    display: flex;
+    justify-self: center;
+    right: 10%;
+    top: 20%;
+  }
+}
 .how_do {
   display: flex;
   flex-direction: row-reverse;
@@ -655,7 +608,7 @@ span {
 }
 .dead_text > h2 {
   font-style: bold;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-top: 4rem;
   margin-bottom: 1rem;
@@ -831,28 +784,67 @@ span {
 .almost {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 4.5rem 0 4.5rem 0;
   align-items: center;
   justify-content: center;
 }
+.kim {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgb(82, 112, 228) -60.81deg,
+    rgb(208, 98, 100) 34.48deg,
+    rgb(133, 43, 63) 124.77deg,
+    rgb(54, 112, 177) 218.32deg,
+    rgb(82, 112, 228) 299.19deg,
+    rgb(208, 98, 100) 394.48deg
+  );
+  padding: 1px;
+  border-radius: 1.5em;
+}
 .linear {
-  font-size: 1.3em;
-  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  background: rgb(11, 11, 11);
   border-radius: 2em;
-  border: 0.02em solid violet;
-  box-shadow: rgba(236, 20, 233, 0.802);
+  border: 1px solid transparent;
+  height: 1.9em;
   justify-content: center;
-  padding: 1em 2.5em;
-  font-weight: 700;
-  font-style: bold;
+  padding: 0.5em 2em 0.5em 1.5em;
   font-family: Arial, Helvetica, sans-serif;
+}
+.reduces {
+  width: 1.5em;
+  height: 1.5em;
+}
+.killit {
+  margin-left: 1.2em;
+  color: rgb(247, 248, 248);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .vixpat {
   display: flex;
-  width: 100%;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
+  margin: 5rem 3rem 0 3rem;
   background-color: #1c1d1f;
+  border-radius: 0.5em;
+}
+.videopart {
+  width: 50%;
+  padding: 0 1.3em 0 0;
+  border-radius: 0.5em;
+}
+video {
+  object-fit: contain;
+}
+.see {
+  padding: 6em 10rem;
+}
+.videotext {
+  width: 50%;
 }
 .kingsark {
   display: flex;
@@ -863,11 +855,229 @@ span {
 .kingsark button {
   border-radius: 0.3em;
   font-size: 1.3em;
-  color: var(--main-color);
+  background: #5e6ad2;
   border: 0.02em solid violet;
   justify-content: center;
-  padding: 1em 2.5em;
+  padding: 1em 2em;
   font-weight: 700;
   font-style: bold;
   font-family: Arial, Helvetica, sans-serif;
+}
+.maintext {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  font-size: 1em;
+}
+.maintext > h2 {
+  font-weight: 800;
+  font-size: 2em;
+  color: var(--main-color);
+}
+.maintext > h3 {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  color: var(--main-color);
+  padding-bottom: 3em;
+  line-height: 1.5;
+}
+.call a {
+  color: #323da2;
+}
+.call {
+  margin: 0.5em;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #f7f8f8;
+}
+em {
+  color: dimgray;
+}
+.myman {
+  padding: 0 3em;
+}
+.mymain1 {
+  padding: 0 2em;
+}
+.mainman {
+  text-align: center;
+}
+.mymanlast > h2 {
+  color: var(--main-color);
+  font-size: 2.5em;
+  margin: -1.2em 0 0.2em 0;
+  font-weight: bold;
+}
+.mymanlast > p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 1em 3em;
+  display: flex;
+  justify-content: center;
+}
+.das {
+  font-size: 1.6em;
+}
+.buttonlast button {
+  width: 28%;
+  height: 3em;
+  background-color: #5e6ad2;
+  border-radius: 0.3em;
+}
+footer {
+  padding: 0 8px;
+  border-top: 1px solid transparent;
+}
+.foot {
+  display: flex;
+  padding: 2em 0;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+}
+.left1 {
+  display: flex;
+  justify-content: space-between;
+}
+.footclx {
+  margin-left: 2em;
+  color: #999;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.left1 a:hover {
+  color: var(--main-color);
+  transition: 0.3s ease;
+}
+/*responsiveness for 430px*/
+
+@media (max-width: 430px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    line-height: 1.2;
+    font-size: 1.2em;
+    color-scheme: dark;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .main_area {
+    margin: 0;
+    padding: 0.58em;
+  }
+  .text > h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #f7f8f8;
+  }
+  .second_part p {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: var(--text-color);
+  }
+  .dark_text {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #323da2;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.3;
+  }
+  .things {
+    margin-top: 2em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 1200px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  .jsx-3531796665 {
+    max-width: 3em;
+    margin: 0 2em 2.5em 2em;
+    flex-shrink: 1;
+    padding: 0;
+  }
+  .complex {
+    margin-top: 0;
+  }
+  .text3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .inside p {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .boxe {
+    min-width: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1em 0;
+    padding: 1rem 2rem 1rem 1rem;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: rgba(39, 40, 43, 0.82);
+    width: 100%;
+    box-shadow: 0 13px 40px rgb(0 0 0 /30%), 0 4px 4px rgb(0 0 0 /20%);
+  }
+  .boxes h3 {
+    margin: 0;
+  }
+  .boxes h4 {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .boxes p {
+    font-size: 0.8rem;
+  }
+  .text4{
+    font-size:1em;
+  }
+  .sign_up a {
+    font-weight: 400;
+    margin-right: 0.327em;
+  }
+  .sign_up button {
+    padding: 1em;
+    float: left;
+    border-radius: 0.55em;
+    background-color: var(--button-color);
+    border: none;
+    cursor: pointer;
+  }
+  nav .sign_up {
+    display: inline-block;
+    margin: 0 0.5em;
+    float: left;
+  }
+  #sign_up {
+    font-size: 0.985rem;
+    font-weight: 700;
+  }
 }
