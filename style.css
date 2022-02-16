@@ -17,15 +17,16 @@
 }
 .main_area {
   border: 5px solid brown;
-  box-sizing: border-box;
   overflow: hidden;
 }
+body {
+  display: block;
+}
 
-.cotainer {
+.container {
   display: flex;
   flex-direction: column;
   position: relative;
-  box-sizing: border-box;
   border: 5px solid rgb(147, 111, 238);
 }
 header {
@@ -36,8 +37,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: transparent;
+  backdrop-filter: blur(5px);
 }
 div {
   display: block;
@@ -294,7 +296,7 @@ span {
 }
 .text4 {
   text-align: left;
-  width: 40%;
+  width: ;
   line-height: 1em;
   border: 5px red solid;
   margin: 6rem 0;
@@ -877,16 +879,53 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
   }
   :root {
     line-height: 1.2;
-    font-size: 0.5em;
+    font-size: 16px;
     color-scheme: dark;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .main_area {
+  .listing {
+    display: none;
+  }
+  nav .sign_up {
+    display: flex;
+    flex-direction: row;
     margin: 0;
-    padding: 0.58em;
+  }
+  .sign_up a {
+    padding: 1em 0;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    width: 13%;
+    height: 1.97em;
+    align-items: center;
+    box-shadow: none;
+    justify-items: end;
+    margin-right: 2em;
+    position: static;
+  }
+  .line {
+    border: 2px solid white;
+    margin-top: 6px;
+    width: 100%;
+    margin: 0.2em;
+    padding: 0em;
+    border-radius: 0.23em;
+  }
+
+  .second_part p {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: var(--text-color);
   }
   .text > h2 {
     display: flex;
@@ -897,51 +936,63 @@ footer {
     line-height: 1.2;
     color: #f7f8f8;
   }
-  .second_part p {
-    text-align: center;
-    margin-top: 0.5em;
-    margin-bottom: 1.2em;
-    font-size: 1.2rem;
-    line-height: 1.2;
-    color: var(--text-color);
+  .btn {
+    margin: 0;
   }
+
   .dark_text {
     margin-bottom: 1em;
     text-align: center;
     color: #323da2;
     letter-spacing: 0.2em;
-    font-size: 0.8rem;
+    font-size: 1em;
     font-family: Helvetica, sans-serif;
     line-height: 1.3;
   }
   .things {
     margin-top: 2em;
-    margin-bottom: 5em;
+    margin-bottom: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
     max-height: 1200px;
     width: 100%;
     overflow: hidden;
     padding: 0;
+    padding: 2em 0em 1em 0em;
+    max-height: 120vmin;
+  }
+  .things a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
+    align-items: center;
+    justify-content: space-around;
   }
   .jsx-3531796665 {
-    max-width: 3em;
+    max-width: 7em;
     margin: 0 2em 2.5em 2em;
     flex-shrink: 1;
     padding: 0;
   }
   .complex {
     margin-top: 0;
+    padding: 0 1em;
+  }
+  .inside {
+    font-size: 1.2em;
+    text-align: justify;
+    padding-top: 1.4em;
+  }
+  .inside p {
+    font-size: 1rem;
+    font-weight: 400;
   }
   .text3 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 1.3;
-  }
-  .inside p {
-    font-size: 1em;
-    font-weight: 400;
   }
 
   .boxe {
@@ -953,7 +1004,7 @@ footer {
   .boxes {
     display: flex;
     flex-direction: column;
-    margin: 0 0 1em 0;
+    margin: 0 1.5em 1em 1.5em;
     padding: 1rem 2rem 1rem 1rem;
     flex-wrap: wrap;
     font-size: 1.2rem;
@@ -963,27 +1014,154 @@ footer {
     width: 100%;
     box-shadow: 0 13px 40px rgb(0 0 0 /30%), 0 4px 4px rgb(0 0 0 /20%);
   }
+  .side_side {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .text4 {
+    margin: 0;
+    font-size: 0.852em;
+  }
+  .text4 p {
+    margin-bottom: 1.2em;
+    padding: 0.1rem;
+    font-size: 0.1em;
+  }
+  .imgs {
+    width: 100%;
+  }
+  .background {
+    margin: 2vw;
+    width: 100vw;
+    height: 60vh;
+    border-radius: 1em;
+    overflow: hidden;
+  }
+  .first {
+    top: 5%;
+    width: 90vw;
+    left: -12%;
+    height: 40vh;
+  }
+  .secondi {
+    height: 50vh;
+    left: -2.5%;
+  }
+  .conti {
+    padding: 0;
+  }
+  .next1 {
+    padding: 0;
+    height: 70vh;
+    min-height: 50vh;
+  }
+  .dance {
+    font-size: 1em;
+  }
+  .dance > h2 {
+    padding: 0 0.3em;
+    font-size: 1.9em;
+  }
+  .dis {
+    max-height: 50vmin;
+    margin: 5em auto;
+    border-radius: 1em;
+  }
+  .bottom {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .image {
+    width: 100%;
+  }
+  .backk {
+    width: 100%;
+    height: 100vh;
+    border-radius: 1em;
+    margin: 0 0.8em;
+    overflow: hidden;
+  }
+  .net {
+    right: 9%;
+    height: 37vh;
+    left: ;
+  }
+  #howto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .image1 {
+    width: 100%;
+    margin: 0;
+    border-radius: 1.3em;
+    overflow: hidden;
+  }
+  .ni {
+    height: 50vh;
+  }
+  .net1 {
+    border-radius: 1em;
+    top: 5%;
+    left: 7%;
+    height: 36vh;
+  }
   .dead {
     margin: 0 auto;
+    padding: 0 1em;
+    font-size: 16px;
+    width: 100%;
   }
   .dead_text {
     margin: 0;
   }
+  .dead_text > h2 {
+    font-size: 1.6em;
+    width: 100%;
+    padding: 0 0.6em;
+  }
   .dead_text > p {
     margin-bottom: 0.7em;
+    font-size: 1em;
+  }
+  .god1,
+  .god2,
+  .god3 {
+    display: none;
   }
   .shit {
     padding: 0.7em 0.7em 0.7em 0;
+    width: 100%;
   }
+
   .last_child {
     padding-right: 0;
     padding-left: 0;
+    flex-direction: column;
+    margin: 0 0 2em 0;
   }
   .last1 {
     padding: 0;
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 3rem;
   }
   .last2 {
     padding: 0;
+    width: 100%;
+    margin: 2em 0 0 0;
+  }
+  .tried {
+    padding: 0;
+  }
+  .tryag {
+    margin: 0;
+  }
+  .tweet {
+    flex-direction: column;
+    font-size: 15px;
   }
   .boxes h3 {
     margin: 0;
@@ -995,9 +1173,6 @@ footer {
   .boxes p {
     font-size: 0.8rem;
   }
-  .text4 {
-    font-size: 1em;
-  }
   .hmmh {
     max-height: 90vh;
     width: 45vw;
@@ -1007,60 +1182,106 @@ footer {
     bottom: 20%;
     height: 20rem;
   }
-  .text4 {
-    font-size: 0.62rem;
-    width: 50%;
-  }
-  .this {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  .image1 {
-    max-height: 380px;
-  }
-  .net1 {
-    left: 10%;
-    top: 5%;
-  }
-  .backk {
-    max-height: 380px;
-  }
-  .net {
-    top: 5%;
-  }
-  .see {
-    padding: 0;
-  }
   .vixpat {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 2em;
+    flex-direction: column;
+    width: 100%;
   }
-  .call {
-    font-size: 1.2rem;
+  .videopart {
+    width: 100%;
+    margin: 0 2em 2em 2em;
   }
-  .dance > h2 {
-    line-height: normal;
+  .videotext {
+    width: 100%;
+    padding: 1em;
   }
-  .text4 p {
-    font-size: 1.5rem;
-    line-height: 1.2;
+  .myman {
+    padding: 0;
+    font-size: 16px;
   }
-  .side_side .text4 .imgs {
-    width: 50%;
+  .mymanlast {
+    font-size: 1.2em;
   }
-  nav .sign_up {
-    display: inline-block;
-    margin: 0 0.5em;
+  .mymanlast h2 {
+    font-size: 1.6em;
   }
-  #sign_up {
-    font-size: 0.985rem;
-    font-weight: 700;
+  .mymanlast p {
+    font-size: 0.9em;
+    margin: 0;
+    padding-bottom: 0.6em;
   }
-  /* medium screen display */
+  .buttonlast button {
+    border-radius: 0.5em;
+    border: none;
+    width: 60vw;
+    height: 8vh;
+    background: linear-gradient(
+      92.88deg,
+      rgb(69, 94, 181) 9.16%,
+      rgb(86, 67, 204) 43.89%,
+      rgb(103, 63, 215) 64.72%
+    );
+    margin-bottom: 1.3em;
+  }
+  .das {
+    font-size: 1.4rem;
+    padding: 1.2em;
+    line-height: 2;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    margin-bottom: 2em;
+  }
+  .left1 {
+    flex-direction: column;
+  }
+  .footclx {
+    margin-bottom: 1.3em;
+  }
 }
-@media screen and (min-width: 480px) and (max-width: 780px) {
+.this {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.image1 {
+  max-height: 380px;
+}
+
+.backk {
+  max-height: 380px;
+}
+.net {
+  top: 5%;
+}
+.see {
+  padding: 0;
+}
+.vixpat {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.call {
+  font-size: 1.2rem;
+}
+.dance > h2 {
+  line-height: normal;
+}
+.text4 p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+#sign_up {
+  font-size: 0.985rem;
+  font-weight: 700;
+}
+/* medium screen display */
+@media screen and (min-width: 490px) and (max-width: 780px) {
   :root {
     line-height: 2.2;
     color: #dadfe7;
